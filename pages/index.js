@@ -79,10 +79,10 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Allen is a full-time front-end developer who likes to build and learn
-          along the way. I've worked as a front end web developer for digital
-          marketing agencies with international clients for 2 years. Currently
-          I'm trying to learn as much as I can about Node and Back-End
-          Development in general.
+          along the way. I&apos;ve worked as a front end web developer for
+          digital marketing agencies with international clients for 2 years.
+          Currently I&apos;m trying to learn as much as I can about Node and
+          Back-End Development in general.
         </Paragraph>
         <Box align="left" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -113,7 +113,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Present</BioYear>
-          Continuing 25SQM's project and taking various freelance projects
+          Continuing 25SQM&apos;s project and taking various freelance projects
         </BioSection>
       </Section>
 

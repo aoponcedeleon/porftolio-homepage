@@ -19,7 +19,7 @@ const Works = () => (
       </Heading>
 
       <Text mb={4} fontSize="md">
-        Along with some other WIP side projects, here are some things I've
+        Along with some other WIP side projects, here are some things I&apos;ve
         already made:
       </Text>
 
