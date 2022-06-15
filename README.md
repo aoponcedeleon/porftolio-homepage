@@ -1,12 +1,10 @@
-# Takuya's Homepage
+# Original Creator's Site:
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## Tutorial
-
-Watch how I built this website on YouTube:
+Watch how Takuya built this website on YouTube:
 
 [![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+
+Takuya's [Website](https://www.craftz.dog/)
 
 ## Stack
 
@@ -28,17 +26,6 @@ $PROJECT_ROOT
 │   # Static files for images and 3d model file
 └── public
 ```
-
-## License
-
-MIT License.
-
-You can create your own homepage for free without notifying me by forking this project under the following conditions:
-
-- Add a link to [my homepage](https://www.craftz.dog/)
-- Do not use the 3d voxel dog
-
----
 
 Looking for a Markdown note-taking app? Check out my app called Inkdrop:
 

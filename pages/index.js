@@ -27,7 +27,7 @@ const Home = () => (
     <Container>
       <Box
         borderRadius="lg"
-        mb={6}
+        my={6}
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -84,7 +84,7 @@ const Home = () => (
           I'm trying to learn as much as I can about Node and Back-End
           Development in general.
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box align="left" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
@@ -131,7 +131,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
-        <List>
+        <List display={{ md: 'flex' }}>
           <ListItem>
             <Link href="https://github.com/aoponcedeleon" target="_blank">
               <Button
