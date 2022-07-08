@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -45,12 +45,23 @@ const Home = () => (
             Front-End Developer (Aspiring Full-Stack ☕) and Freelance Web
             Developer
           </p>
+          <Box align="left" my={4}>
+            <NextLink
+              href="mailto:allenpdl75@gmail.com"
+              passHref
+              scroll={false}
+            >
+              <Button rightIcon={<EmailIcon />} colorScheme="teal">
+                Send Me an Email!
+              </Button>
+            </NextLink>
+          </Box>
         </Box>
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
-          textAlign="center"
+          textAlign={{ md: 'left' }}
         >
           <Box
             borderColor="whiteAlpha.800"
