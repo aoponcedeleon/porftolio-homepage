@@ -3,13 +3,17 @@ import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import splitbee from '@splitbee/web'
+import { useEffect } from 'react'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }
 
 function Website({ Component, pageProps, router }) {
-  splitbee.init()
+  useEffect(() => {
+    splitbee.init()
+  }, [])
+
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
