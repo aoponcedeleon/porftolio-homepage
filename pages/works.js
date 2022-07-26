@@ -10,6 +10,7 @@ import thumbBilkenn from '../public/images/works/bilkenn.jpg'
 import thumbHouseReno from '../public/images/works/house-reno-thumb.jpg'
 import thumbQDocs from '../public/images/works/qdocs.png'
 import thumbDisc from '../public/images/works/discord-clone.png'
+import thumbPW from '../public/images/works/pw-gen.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -34,6 +35,19 @@ const Works = () => (
             learn/explore Next.JS, TailwindCSS and DraftJS
           </WorkGridItem>
         </Section>
+        <Section>
+          <WorkGridItem
+            link="https://pw.aoponcedeleon.me/"
+            title="PW Gen"
+            thumbnail={thumbPW}
+          >
+            Side project I made to create my own password generator that uses my
+            browser&apos;s localStorage to store all my passwords. I also made
+            it to further learn Mantine&apos;s Styled Components and deepen my
+            knowledge on Front End Development and UX Practices
+          </WorkGridItem>
+        </Section>
+
         <Section>
           <WorkGridItem
             link="https://discord-clone-eb0dd.web.app/"
