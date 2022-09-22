@@ -11,6 +11,7 @@ import thumbHouseReno from '../public/images/works/house-reno-thumb.jpg'
 import thumbQDocs from '../public/images/works/qdocs.png'
 import thumbDisc from '../public/images/works/discord-clone.png'
 import thumbPW from '../public/images/works/pw-gen.png'
+import thumbSIMS from '../public/images/works/sims-db.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -25,6 +26,14 @@ const Works = () => (
       </Text>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem link="#" title="SIMS Dashboard" thumbnail={thumbSIMS}>
+            Part of 25SQM&apos;s effort for digitalization of all their
+            processes. Automated a lot of their supervisors&apos; generation of
+            reports and charts and their clients&apos; viewing of their reports.
+            Made with ReactJ + Mantine Styled Components + LaravelPHP + MySQL.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             link="https://qdocs-two.vercel.app/"

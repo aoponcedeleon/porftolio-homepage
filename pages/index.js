@@ -33,7 +33,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a front-end developer based in The Philippines!
+        Hello, I&apos;m a Software Engineer based in The Philippines!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -41,10 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Allen Ponce de Leon
           </Heading>
-          <p>
-            Front-End Developer (Aspiring Full-Stack ☕) and Freelance Web
-            Developer
-          </p>
+          <p>Software Engineer ☕️ and Freelance Web Developer</p>
           <Box align="left" my={4}>
             <NextLink
               href="mailto:allenpdl75@gmail.com"
@@ -91,9 +88,10 @@ const Home = () => (
         <Paragraph>
           Allen is a full-time front-end developer who likes to build and learn
           along the way. I&apos;ve worked as a front end web developer for
-          digital marketing agencies with international clients for 2 years.
-          Currently I&apos;m trying to learn as much as I can about Node and
-          Back-End Development in general.
+          digital marketing agencies with international clients and local
+          companies for nearly 3 years now. Currently I&apos;m trying to learn
+          as much as I can about Java and SpringBoot for a project I&apos;m
+          assigned in (Stack: React, Azure, SpringBoot).
         </Paragraph>
         <Box align="left" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -124,7 +122,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>Present</BioYear>
-          Continuing 25SQM&apos;s project and taking various freelance projects
+          Working as a Software Engineer for Optum.
         </BioSection>
       </Section>
 
