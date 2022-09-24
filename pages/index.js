@@ -7,7 +7,6 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
@@ -26,18 +25,11 @@ const Home = () => (
   <Layout>
     <Container>
       <Box
-        borderRadius="lg"
-        my={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
+        mt={{ sm: '8', md: '16' }}
+        display={'flex'}
+        flexDirection={{ sm: 'column', md: 'row' }}
       >
-        Hello, I&apos;m a Software Engineer based in The Philippines!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+        <Box order={{ sm: 2, md: 1 }} flexGrow={{ md: 1 }}>
           <Heading as="h2" variant="page-title">
             Allen Ponce de Leon
           </Heading>
@@ -48,16 +40,18 @@ const Home = () => (
               passHref
               scroll={false}
             >
-              <Button rightIcon={<EmailIcon />} colorScheme="teal">
+              <Button rightIcon={<EmailIcon />} colorScheme="blue">
                 Send Me an Email!
               </Button>
             </NextLink>
           </Box>
         </Box>
         <Box
+          order={{ sm: 1, md: 2 }}
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 2, md: 0 }}
           ml={{ md: 6 }}
+          mb={{ base: 6, md: 0 }}
           textAlign={{ md: 'left' }}
         >
           <Box
@@ -95,7 +89,7 @@ const Home = () => (
         </Paragraph>
         <Box align="left" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
               My portfolio
             </Button>
           </NextLink>
@@ -145,7 +139,7 @@ const Home = () => (
             <Link href="https://github.com/aoponcedeleon" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<IoLogoGithub />}
               >
                 @aoponcedeleon
@@ -156,7 +150,7 @@ const Home = () => (
             <Link href="https://twitter.com/allenponsiii" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<IoLogoTwitter />}
               >
                 @allenponsiii
@@ -170,7 +164,7 @@ const Home = () => (
             >
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<IoLogoLinkedin />}
               >
                 Allen Ponce de Leon

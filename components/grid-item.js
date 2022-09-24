@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Heading } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -30,11 +30,19 @@ export const WorkGridItem = ({ children, link, title, thumbnail }) => (
         placeholder="blur"
       />
       <LinkOverlay href={link} isExternal>
-        <Text mt={2} fontSize={20}>
+        <Heading
+          as="h3"
+          textAlign={{ base: 'left', md: 'left' }}
+          mt={2}
+          mb={2}
+          fontSize={20}
+        >
           {title}
-        </Text>
+        </Heading>
       </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Text textAlign={{ base: 'left', md: 'left' }} fontSize={14}>
+        {children}
+      </Text>
     </LinkBox>
   </Box>
 )

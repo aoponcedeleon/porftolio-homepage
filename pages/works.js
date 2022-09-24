@@ -16,7 +16,7 @@ import thumbSIMS from '../public/images/works/sims-db.png'
 const Works = () => (
   <Layout title="Works">
     <Container my={6}>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as="h2" fontSize={{ sm: 24, md: 36 }} mb={4}>
         Works
       </Heading>
 

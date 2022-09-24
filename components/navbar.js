@@ -25,8 +25,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        px={4}
+        borderRadius={4}
+        bg={active ? '#3181ce' : undefined}
+        color={active ? 'white' : inactiveColor}
         target={target}
         {...props}
       >
@@ -52,7 +54,6 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -74,7 +75,8 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://blog.aoponcedeleon.me/">Blog</LinkItem>
+          {/* <LinkItem href="https://blog.aoponcedeleon.me/">Blog</LinkItem> */}
+          {/* <LinkItem href="/posts">Blog</LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/aoponcedeleon/porftolio-homepage"
@@ -101,15 +103,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                {/* <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
