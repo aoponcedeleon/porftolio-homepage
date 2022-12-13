@@ -12,6 +12,8 @@ import thumbQDocs from '../public/images/works/qdocs.png'
 import thumbDisc from '../public/images/works/discord-clone.png'
 import thumbPW from '../public/images/works/pw-gen.png'
 import thumbSIMS from '../public/images/works/sims-db.png'
+import thumbFCFW from '../public/images/works/thumbFCFW.png'
+import thumbMono from '../public/images/works/thumbMono.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -26,6 +28,32 @@ const Works = () => (
       </Text>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            link="https://getmonocraft.com/"
+            title="Monocraft"
+            thumbnail={thumbMono}
+          >
+            I built my own print-on-demand, full ecommerce shopify site to
+            (hopefully) sell my art posters online. All complete with add to
+            cart, checkout, payment, and shipping. Made with Shopify, Liquid,
+            and CSS.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            link="https://fruitwarehouseph.com/"
+            title="Fruit Warehouse PH"
+            thumbnail={thumbFCFW}
+          >
+            Created a full ecommerce shopify site. Client already had a theme
+            they wanted to build on top of and customize certain components and
+            pages to their liking. I did so using Shopify&apos;s Liquid, HTML,
+            and CSS. This involved changing a lot of stuff with their shipping
+            flow and checkout, as well as coding our own templates for the
+            packing slips, etc.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem link="#" title="SIMS Dashboard" thumbnail={thumbSIMS}>
             Part of 25SQM&apos;s effort for digitalization of all their
