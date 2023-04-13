@@ -5,15 +5,12 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbAgenix from '../public/images/works/agenix.png'
 import thumbSBS from '../public/images/works/sbs.jpg'
-import thumbWholeGoals from '../public/images/works/wholegoals.jpg'
-import thumbBilkenn from '../public/images/works/bilkenn.jpg'
 import thumbHouseReno from '../public/images/works/house-reno-thumb.jpg'
-import thumbQDocs from '../public/images/works/qdocs.png'
-import thumbDisc from '../public/images/works/discord-clone.png'
 import thumbPW from '../public/images/works/pw-gen.png'
 import thumbSIMS from '../public/images/works/sims-db.png'
 import thumbFCFW from '../public/images/works/thumbFCFW.png'
-import thumbMono from '../public/images/works/thumbMono.png'
+import thumbcsmcrsrc from '../public/images/works/thumbcsmcrsrc.png'
+import thumbFindDevs from '../public/images/works/thumbFindDevs.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -30,14 +27,22 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
-            link="https://getmonocraft.com/"
-            title="Monocraft"
-            thumbnail={thumbMono}
+            link="https://csmc.fyi/"
+            title="Cosmic Resources "
+            thumbnail={thumbcsmcrsrc}
           >
-            I built my own print-on-demand, full ecommerce shopify site to
-            (hopefully) sell my art posters online. All complete with add to
-            cart, checkout, payment, and shipping. Made with Shopify, Liquid,
-            and CSS.
+            Free collection of resources for developers, designers, and makers,
+            updated regularly
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            link="https://find-devs.aoponcedeleon.me"
+            title="Github Finder v2"
+            thumbnail={thumbFindDevs}
+          >
+            A modern implementation of my old Github Finder Search this time
+            using NextJS and Mantine
           </WorkGridItem>
         </Section>
         <Section>
@@ -64,16 +69,6 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            link="https://qdocs-two.vercel.app/"
-            title="QDocs"
-            thumbnail={thumbQDocs}
-          >
-            Side project I made to try and recreate Google Docs. Created to
-            learn/explore Next.JS, TailwindCSS and DraftJS
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
             link="https://pw.aoponcedeleon.me/"
             title="PW Gen"
             thumbnail={thumbPW}
@@ -82,18 +77,6 @@ const Works = () => (
             browser&apos;s localStorage to store all my passwords. I also made
             it to further learn Mantine&apos;s Styled Components and deepen my
             knowledge on Front End Development and UX Practices
-          </WorkGridItem>
-        </Section>
-
-        <Section>
-          <WorkGridItem
-            link="https://discord-clone-eb0dd.web.app/"
-            title="Discord Clone"
-            thumbnail={thumbDisc}
-          >
-            Side project I made to try and recreate Discord. Created this to
-            better understand CSS Flexbox, integrating Auth and DB from Google
-            Cloud, and Redux
           </WorkGridItem>
         </Section>
         <Section>
@@ -114,26 +97,6 @@ const Works = () => (
           >
             Web3 Marketing Agency Website Made with Elementor and Lots of Custom
             CSS and Jquery
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            link="https://wholegoalslife.com"
-            title="Whole Goals"
-            thumbnail={thumbWholeGoals}
-          >
-            Lifestyle Wellness Website with members and courses functionality
-            Made with Elementor and Lots of Custom CSS and Jquery
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem
-            link="https://bilkenn.kinsta.cloud/"
-            thumbnail={thumbBilkenn}
-            title="Bilkenn"
-          >
-            Real Estate Website made for client.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
