@@ -11,6 +11,7 @@ import thumbSIMS from '../public/images/works/sims-db.png'
 import thumbFCFW from '../public/images/works/thumbFCFW.png'
 import thumbcsmcrsrc from '../public/images/works/thumbcsmcrsrc.png'
 import thumbFindDevs from '../public/images/works/thumbFindDevs.png'
+import thumbBrandisho from '../public/images/works/thumbBrandisho.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -25,6 +26,16 @@ const Works = () => (
       </Text>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            link="https://brandisho.csmc.fyi/"
+            title="Brandisho"
+            thumbnail={thumbBrandisho}
+          >
+            Generate Your Next Business and Product Ideas using OpenAI&apos;s
+            GPT model. Created using NextJS, TailwindCSS, Railway, and OpenAI.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             link="https://csmc.fyi/"
