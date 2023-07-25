@@ -4,14 +4,14 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbAgenix from '../public/images/works/agenix.png'
-import thumbSBS from '../public/images/works/sbs.jpg'
-import thumbHouseReno from '../public/images/works/house-reno-thumb.jpg'
+// import thumbSBS from '../public/images/works/sbs.jpg'
+// import thumbHouseReno from '../public/images/works/house-reno-thumb.jpg'
 import thumbPW from '../public/images/works/pw-gen.png'
 import thumbSIMS from '../public/images/works/sims-db.png'
 import thumbFCFW from '../public/images/works/thumbFCFW.png'
 import thumbcsmcrsrc from '../public/images/works/thumbcsmcrsrc.png'
 import thumbFindDevs from '../public/images/works/thumbFindDevs.png'
-import thumbBrandisho from '../public/images/works/thumbBrandisho.png'
+// import thumbBrandisho from '../public/images/works/thumbBrandisho.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -26,7 +26,7 @@ const Works = () => (
       </Text>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+        {/* <Section>
           <WorkGridItem
             link="https://brandisho.csmc.fyi/"
             title="Brandisho"
@@ -35,7 +35,7 @@ const Works = () => (
             Generate Your Next Business and Product Ideas using OpenAI&apos;s
             GPT model. Created using NextJS, TailwindCSS, Railway, and OpenAI.
           </WorkGridItem>
-        </Section>
+        </Section> */}
         <Section>
           <WorkGridItem
             link="https://csmc.fyi/"
@@ -48,7 +48,19 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            link="https://find-devs.aoponcedeleon.me"
+            link="https://strongpassword.csmc.fyi/"
+            title="PW Gen"
+            thumbnail={thumbPW}
+          >
+            Side project I made to create my own password generator that uses my
+            browser&apos;s localStorage to store all my passwords. I also made
+            it to further learn Mantine&apos;s Styled Components and deepen my
+            knowledge on Front End Development and UX Practices
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            link="https://github-finder-v2-sable.vercel.app/"
             title="Github Finder v2"
             thumbnail={thumbFindDevs}
           >
@@ -78,19 +90,7 @@ const Works = () => (
             Made with ReactJ + Mantine Styled Components + LaravelPHP + MySQL.
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem
-            link="https://pw.aoponcedeleon.me/"
-            title="PW Gen"
-            thumbnail={thumbPW}
-          >
-            Side project I made to create my own password generator that uses my
-            browser&apos;s localStorage to store all my passwords. I also made
-            it to further learn Mantine&apos;s Styled Components and deepen my
-            knowledge on Front End Development and UX Practices
-          </WorkGridItem>
-        </Section>
-        <Section>
+        {/* <Section>
           <WorkGridItem
             link="https://smallbusinesssolutions.com.ph/"
             title="SBS"
@@ -99,7 +99,7 @@ const Works = () => (
             Digital Marketing Agency Website Made with Elementor and Lots of
             Custom CSS and Jquery
           </WorkGridItem>
-        </Section>
+        </Section> */}
         <Section>
           <WorkGridItem
             link="https://agenix.digital"
@@ -110,7 +110,7 @@ const Works = () => (
             CSS and Jquery
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
+        {/* <Section delay={0.1}>
           <WorkGridItem
             link="https://houserenovation.ph/"
             thumbnail={thumbHouseReno}
@@ -119,7 +119,7 @@ const Works = () => (
             Website created for client business that seek contractors for houses
             (various services).
           </WorkGridItem>
-        </Section>
+        </Section> */}
       </SimpleGrid>
     </Container>
   </Layout>

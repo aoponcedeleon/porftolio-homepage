@@ -136,13 +136,13 @@ const Home = () => (
         </Heading>
         <List display={{ md: 'flex' }}>
           <ListItem>
-            <Link href="https://github.com/aoponcedeleon" target="_blank">
+            <Link href="https://github.com/cosmiclasagnadev" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="blue"
                 leftIcon={<IoLogoGithub />}
               >
-                @aoponcedeleon
+                @cosmiclasagnadev
               </Button>
             </Link>
           </ListItem>
